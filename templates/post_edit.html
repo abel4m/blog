@@ -1,0 +1,8 @@
+<!-- templates/post_edit.html-->
+{% block content %}
+<h1>Edit Post</h1>
+<form action="" method="pos">{% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Update">
+</form>
+{% endblock content %}
